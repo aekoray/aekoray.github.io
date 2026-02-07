@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Koray | Bio Link</title>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+
+        :root {
+            --bg: #050505;
+            --card-bg: rgba(255, 255, 255, 0.03);
+            --border: rgba(255, 255, 255, 0.08);
+            --accent: #ffffff;
+            --text-secondary: #a0a0a0;
+            --glow-color: rgba(255, 255, 255, 0.15);
+        }
+
+        body {
+            background-color: var(--bg);
+            color: white;
+            font-family: '-apple-system', 'BlinkMacSystemFont', 'SF Pro Display', 'Inter', sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            overflow-x: hidden;
+            background-image: 
+                radial-gradient(circle at 80% 20%, rgba(50, 50, 50, 0.4), transparent 40%),
+                radial-gradient(circle at 20% 80%, rgba(30, 30, 30, 0.4), transparent 40%);
+        }
+
+        .container::before {
+            content: "";
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 300px;
+            height: 300px;
+            background: radial-gradient(circle, rgba(255,255,255,0.05) 0%, transparent 70%);
+            z-index: -1;
+            filter: blur(50px);
+        }
+
+        .container {
+            width: 100%;
+            max-width: 400px;
+            padding: 20px;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+            position: relative;
+        }
+
+        .bento-header {
+            background: var(--card-bg);
+            border: 1px solid var(--border);
+            padding: 32px 20px;
+            border-radius: 24px;
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+            margin-bottom: 8px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+            position: relative;
+            overflow: hidden;
+        }
+
+        /* Effet de reflet sur le header */
+        .bento-header::after {
+            content: "";
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: linear-gradient(45deg, transparent, rgba(255,255,255,0.03), transparent);
+            transform: rotate(45deg);
+            pointer-events: none;
+        }
+
+        .profile-pic {
+            width: 85px;
+            height: 85px;
+            border-radius: 50%;
+            border: 1px solid var(--border);
+            margin-bottom: 16px;
+            object-fit: cover;
+            box-shadow: 0 0 20px rgba(255,255,255,0.05);
+        }
+
+        h1 {
+            font-size: 1.6rem;
+            margin: 0 0 4px 0;
+            font-weight: 700;
+            letter-spacing: -0.03em;
+            text-shadow: 0 0 15px rgba(255,255,255,0.2);
+        }
+
+        .subtitle {
+            color: var(--accent);
+            font-size: 0.9rem;
+            margin: 0 0 12px 0;
+            opacity: 0.8;
+        }
+
+        .quote {
+            color: var(--text-secondary);
+            font-size: 0.75rem;
+            font-style: italic;
+            line-height: 1.5;
+            margin: 0;
+            padding: 0 15px;
+        }
+
+        .links-container {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+
+        .link-card {
+            background: var(--card-bg);
+            border: 1px solid var(--border);
+            padding: 16px 20px;
+            border-radius: 18px;
+            text-decoration: none;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            backdrop-filter: blur(15px);
+            -webkit-backdrop-filter: blur(15px);
+            position: relative;
+        }
+
+        .link-card:hover {
+            background: rgba(255, 255, 255, 0.07);
+            border-color: rgba(255, 255, 255, 0.3);
+            transform: translateY(-3px) scale(1.01);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.3), 0 0 15px var(--glow-color);
+        }
+
+        .link-content {
+            display: flex;
+            align-items: center;
+            gap: 14px;
+        }
+
+        .link-card i {
+            transition: transform 0.3s ease;
+        }
+
+        .link-card:hover i[data-lucide="arrow-up-right"] {
+            transform: translate(2px, -2px);
+        }
+
+        .footer-socials {
+            margin-top: 15px;
+            background: var(--card-bg);
+            border: 1px solid var(--border);
+            padding: 12px 20px;
+            border-radius: 20px;
+            display: inline-flex;
+            justify-content: center;
+            align-self: center;
+            backdrop-filter: blur(10px);
+            transition: all 0.3s ease;
+        }
+
+        .footer-socials:hover {
+            border-color: var(--border);
+            box-shadow: 0 0 15px rgba(255,255,255,0.05);
+        }
+
+        .footer-socials a { 
+            color: white; 
+            opacity: 0.5;
+            transition: all 0.2s;
+            display: flex;
+            align-items: center;
+        }
+        
+        .footer-socials a:hover { 
+            opacity: 1; 
+            transform: scale(1.1);
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="bento-header">
+            <img src="10000066791-min.jpg" alt="Koray" class="profile-pic">
+            <h1>Koray</h1>
+            <p class="subtitle">Fumeur informatique</p>
+            <p class="quote">"Vous prenez 10% et vous en faites une généralité"</p>
+        </div>
+
+        <div class="links-container">
+            <a href="https://www.instagram.com/aekoray_" class="link-card" target="_blank">
+                <div class="link-content"><i data-lucide="instagram"></i><span>Instagram</span></div>
+                <i data-lucide="arrow-up-right"></i>
+            </a>
+            <a href="https://www.tiktok.com/@aekoray" class="link-card" target="_blank">
+                <div class="link-content"><i data-lucide="video"></i><span>TikTok</span></div>
+                <i data-lucide="arrow-up-right"></i>
+            </a>
+            <a href="https://www.youtube.com/@aekoray" class="link-card" target="_blank">
+                <div class="link-content"><i data-lucide="youtube"></i><span>YouTube</span></div>
+                <i data-lucide="arrow-up-right"></i>
+            </a>
+            <a href="https://github.com/aekoray" class="link-card" target="_blank">
+                <div class="link-content"><i data-lucide="github"></i><span>GitHub</span></div>
+                <i data-lucide="arrow-up-right"></i>
+            </a>
+        </div>
+
+        <div class="footer-socials">
+            <a href="mailto:korail.esen101@gmail.com"><i data-lucide="mail"></i></a>
+        </div>
+    </div>
+    <script>
+    lucide.createIcons();
+
+    const title = "@aekoray";
+    let index = 1;
+    let isDeleting = false;
+    let speed = 200;
+
+    function typeTitle() {
+        const currentText = title.substring(0, index);
+        document.title = currentText; 
+
+        if (!isDeleting && index < title.length) {
+            index++;
+            speed = 200; 
+        } else if (isDeleting && index > 1) {
+            index--;
+            speed = 100;
+        } else {
+            isDeleting = !isDeleting;
+            speed = isDeleting ? 2000 : 1000; 
+        }
+
+        setTimeout(typeTitle, speed);
+    }
+
+    typeTitle();
+    </script>
+</body>
+</html>
