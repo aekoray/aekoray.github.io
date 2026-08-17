@@ -5,160 +5,343 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>@aekoray</title>
-    <meta name="description" content="Portfolio personnel de Koray (@aekoray) : Cybersécurité, Administration Système, CAO & Photographie.">
-    
-    <meta property="og:title" content="Koray - Portfolio">
-    <meta property="og:description" content="Étudiant en informatique, administration système et cybersécurité.">
-    <meta property="og:type" content="website">
+    <meta name="description" content="Portfolio personnel de Koray (@aekoray) : Cybersécurité, Systèmes & Réseaux, CAO & Création.">
+    <meta name="keywords" content="Koray, aekoray, portfolio, cybersécurité, informatique, réseaux, systèmes, SolidWorks, hardware">
+    <meta name="author" content="Koray (@aekoray)">
+    <meta name="theme-color" content="#090a10">
 
-    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
+    <!-- Open Graph / Social Media -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Koray (@aekoray) — Portfolio">
+    <meta property="og:description" content="Étudiant en cybersécurité, administration système, réseaux et modélisation CAO.">
+    <meta property="og:image" content="profile.png">
+    <meta property="og:url" content="https://aekoray.github.io/">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Koray (@aekoray) — Portfolio">
+    <meta name="twitter:description" content="Étudiant en cybersécurité, administration système, réseaux et modélisation CAO.">
+    <meta name="twitter:image" content="profile.png">
+
+    <!-- Structured Data (Schema.org) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Koray",
+      "alternateName": "aekoray",
+      "url": "https://aekoray.github.io/",
+      "image": "profile.png",
+      "jobTitle": "Étudiant en Cybersécurité, Systèmes & Réseaux",
+      "sameAs": [
+        "https://github.com/aekoray",
+        "https://www.instagram.com/aekoray_",
+        "https://www.tiktok.com/@aekoray",
+        "https://www.youtube.com/@aekoray"
+      ]
+    }
+    </script>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js" defer></script>
+
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <div class="bg-glow" style="top: 10%; left: 10%; background: var(--primary-glow);"></div>
-    <div class="bg-glow" style="bottom: 10%; right: 10%; background: var(--secondary-glow);"></div>
+    <!-- Ambient glowing lights background -->
+    <div class="ambient-glow glow-top" aria-hidden="true"></div>
+    <div class="ambient-glow glow-bottom" aria-hidden="true"></div>
+    <div class="ambient-glow glow-center" aria-hidden="true"></div>
 
-    <main class="main-wrapper">
-        <div class="left-column">
-            <div class="bento-card profile-center">
-                <img src="profile.png" alt="Koray" class="profile-pic">
-                <h1>Koray</h1>
-                <p class="subtitle">Etudiant en informatique</p>
-            </div>
-
-            <div class="bento-card">
-                <div class="section-title"><i data-lucide="info" size="16"></i> À propos</div>
-                <p class="about-text">
-                    Étudiant en Bac Pro CIEL, je me forme à l'administration système et à la cybersécurité. En
-                    parallèle, je développe mes compétences sur SolidWorks, en dessin et en photographie.
-                </p>
-                <p class="quote">"Vous prenez 10% et vous en faites une généralité..."</p>
-            </div>
-
-            <div class="links-container">
-                <a href="https://www.instagram.com/aekoray_" class="link-card" target="_blank">
-                    <div class="link-content"><i data-lucide="instagram" size="20"></i><span>Instagram</span></div>
-                    <i data-lucide="arrow-up-right" size="18"></i>
-                </a>
-                <a href="https://www.tiktok.com/@aekoray" class="link-card" target="_blank">
-                    <div class="link-content"><i data-lucide="video" size="20"></i><span>TikTok</span></div>
-                    <i data-lucide="arrow-up-right" size="18"></i>
-                </a>
-                <a href="https://www.youtube.com/@aekoray" class="link-card" target="_blank">
-                    <div class="link-content"><i data-lucide="youtube" size="20"></i><span>YouTube</span></div>
-                    <i data-lucide="arrow-up-right" size="18"></i>
-                </a>
-                <a href="https://github.com/aekoray" class="link-card" target="_blank">
-                    <div class="link-content"><i data-lucide="github" size="20"></i><span>GitHub</span></div>
-                    <i data-lucide="arrow-up-right" size="18"></i>
-                </a>
-                <a href="mailto:korail.esen101@gmail.com" class="link-card">
-                    <div class="link-content"><i data-lucide="mail" size="20"></i><span>Email</span></div>
-                    <i data-lucide="arrow-up-right" size="18"></i>
-                </a>
-            </div>
-        </div>
-
-        <div class="right-column">
-            <div class="bento-card fill-height">
-                <div class="section-title"><i data-lucide="palette" size="16"></i> Créations & Modèles</div>
-                <div class="gallery-grid">
-                    <div class="gallery-item">
-                        <img src="karambit.png" alt="SolidWorks">
-                        <div class="item-label">SolidWorks</div>
-                    </div>
-                    <div class="gallery-item">
-                        <img src="batiment.png" alt="Photo">
-                        <div class="item-label">Photo</div>
-                    </div>
-                    <div class="gallery-item">
-                        <img src="dessin.png" alt="Dessin">
-                        <div class="item-label">Dessin</div>
-                    </div>
+    <main class="main-wrapper" id="main-content">
+        <!-- Colonne Gauche -->
+        <aside class="left-column">
+            <!-- Profil Card -->
+            <header class="bento-card profile-card" data-tilt>
+                <div class="profile-avatar-wrapper">
+                    <img src="profile.png" alt="Photo de profil de Koray" class="profile-pic" width="96" height="96">
+                    <span class="status-indicator-ping" title="Actif"></span>
                 </div>
-                <p class="gallery-footer">Aperçu de mes travaux de CAO, illustrations et clichés personnels.</p>
+                <h1 class="profile-name">Koray <span class="profile-handle">@aekoray</span></h1>
+                <p class="profile-role">Étudiant en Cybersécurité &amp; Réseaux</p>
+                <div class="status-pill">
+                    <span class="status-dot"></span>
+                    <span>Étudiant en informatique</span>
+                </div>
+            </header>
 
-                <div class="resume-container">
-                    <div class="section-title"><i data-lucide="graduation-cap" size="16"></i> Formation</div>
-                    <div class="resume-item">
-                        <span class="date">2024-2027</span>
-                        <span class="title">Baccalauréat Professionnel Cybersécurité, Informatique et réseaux,
-                            Électronique</span>
-                        <p class="desc">Établissement d'enseignement technique</p>
-                        <ul class="resume-list">
-                            <li><strong>Gestion du parc matériel :</strong> Remplacement et mise à niveau des postes de
-                                travail (RAM, SSD, GPU, CPU).</li>
-                            <li><strong>Support de proximité :</strong> Assistance technique et dépannage informatique
-                                auprès des utilisateurs.</li>
-                            <li><strong>Systèmes & Réseaux :</strong> Installation et configuration de systèmes de
-                                vidéosurveillance et d'infrastructures réseaux.</li>
-                            <li><strong>Développement :</strong> Maîtrise des fondamentaux de la programmation avec le
-                                langage Python.</li>
-                        </ul>
-                    </div>
+            <!-- À Propos Card -->
+            <section class="bento-card about-card" aria-labelledby="about-heading">
+                <div class="section-header">
+                    <div class="icon-badge"><i data-lucide="user" size="16" aria-hidden="true"></i></div>
+                    <h2 id="about-heading" class="section-title">À propos</h2>
+                </div>
+                <p class="about-text">
+                    Étudiant passionné en <strong class="text-highlight">informatique</strong>, je me forme activement à l'administration système, aux infrastructures réseaux et à la cybersécurité.
+                </p>
+                <p class="about-text">
+                    Curieux et polyvalent, je développe également des compétences solides en modélisation <strong class="text-highlight">SolidWorks</strong>, programmation Python et hardware.
+                </p>
 
-                    <div class="section-title"><i data-lucide="briefcase" size="16"></i> Expérience & Projets</div>
+                <!-- Tags de compétences -->
+                <div class="tags-cloud" aria-label="Compétences clés">
+                    <span class="tech-tag"><i data-lucide="shield-check" size="12"></i> Cybersécurité</span>
+                    <span class="tech-tag"><i data-lucide="network" size="12"></i> Réseaux</span>
+                    <span class="tech-tag"><i data-lucide="cpu" size="12"></i> Hardware</span>
+                    <span class="tech-tag"><i data-lucide="terminal" size="12"></i> Python</span>
+                    <span class="tech-tag"><i data-lucide="box" size="12"></i> SolidWorks</span>
+                </div>
 
-                    <div class="resume-item">
-                        <span class="date">Juin – Juillet 2025</span>
-                        <span class="title">Technicien de maintenance (Stage) – Centre de formation</span>
-                        <ul class="resume-list">
-                            <li><strong>Électrotechnique & Schématique :</strong> Conception et réalisation de schémas
-                                électriques industriels, câblage d'armoires et maintenance des systèmes d'alimentation
-                                d'infrastructures.</li>
-                            <li><strong>Maintenance Polyvalente :</strong> Support de proximité pour le maintien
-                                opérationnel des équipements et aide à la gestion physique des espaces de travail.</li>
-                        </ul>
-                    </div>
+                <blockquote class="quote-card">
+                    <i data-lucide="quote" size="16" class="quote-icon" aria-hidden="true"></i>
+                    <span>"Vous prenez 10% et vous en faites une généralité..."</span>
+                </blockquote>
+            </section>
 
-                    <div class="resume-item">
-                        <span class="date">2022-2023</span>
-                        <span class="title">Service Civique – Association à impact social</span>
-                        <ul class="resume-list">
-                            <li><strong>Inclusion Numérique :</strong> Lutte contre la précarité numérique via
-                                l'accompagnement et la sensibilisation aux outils informatiques.</li>
-                            <li><strong>Engagement Social :</strong> Aide à la personne, lutte contre les
-                                discriminations et sensibilisation aux droits de l'enfant.</li>
-                        </ul>
-                    </div>
-
-                    <div class="resume-item">
-                        <span class="date">Projets</span>
-                        <ul class="resume-list">
-                            <li><strong>Expertise Hardware :</strong> Conseil, sélection des composants et assemblage de
-                                configurations "Gaming" haute performance avec optimisation du rapport prix/puissance.
-                            </li>
-                            <li><strong>Projet Web personnel :</strong> Conception et mise en ligne d'une plateforme de
-                                type "Bio Link" centralisant mes réseaux sociaux.</li>
-                        </ul>
-                    </div>
-
-                    <div class="resume-grid-footer">
-                        <div class="resume-sub-column">
-                            <div class="section-title"><i data-lucide="languages" size="16"></i> Langues</div>
-                            <ul class="resume-clean-list">
-                                <li>• Français (Maternel)</li>
-                                <li>• Anglais (Niveau B2 : Avancé - lu, écrit, parlé)</li>
-                            </ul>
+            <!-- Liens & Réseaux -->
+            <nav class="links-container" aria-label="Liens et réseaux sociaux">
+                <a href="https://www.instagram.com/aekoray_" class="link-card" target="_blank" rel="noopener noreferrer" id="link-instagram">
+                    <div class="link-left">
+                        <div class="social-icon icon-instagram" aria-hidden="true">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
+                                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                                <line x1="17.5" x2="17.51" y1="6.5" y2="6.5"></line>
+                            </svg>
                         </div>
-                        <div class="resume-sub-column">
-                            <div class="section-title"><i data-lucide="star" size="16"></i> Atouts</div>
-                            <ul class="resume-clean-list">
-                                <li>• Sens des responsabilités</li>
-                                <li>• Intelligence relationnelle</li>
-                                <li>• Esprit d'équipe</li>
-                            </ul>
-                        </div>
+                        <span class="link-label">Instagram</span>
                     </div>
+                    <div class="link-right">
+                        <span class="link-tag">@aekoray_</span>
+                        <i data-lucide="arrow-up-right" size="16" class="link-arrow" aria-hidden="true"></i>
+                    </div>
+                </a>
+
+                <a href="https://www.tiktok.com/@aekoray" class="link-card" target="_blank" rel="noopener noreferrer" id="link-tiktok">
+                    <div class="link-left">
+                        <div class="social-icon icon-tiktok" aria-hidden="true">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-5.2 1.74 2.89 2.89 0 0 1 2.31-4.64c.298-.002.595.042.88.13V9.4a6.33 6.33 0 0 0-1-.08A6.34 6.34 0 0 0 3 15.66a6.34 6.34 0 0 0 10.81 4.47 6.3 6.3 0 0 0 1.88-4.47V8.87a8.16 8.16 0 0 0 4.77 1.52v-3.4a4.85 4.85 0 0 1-.87-.3z"/>
+                            </svg>
+                        </div>
+                        <span class="link-label">TikTok</span>
+                    </div>
+                    <div class="link-right">
+                        <span class="link-tag">@aekoray</span>
+                        <i data-lucide="arrow-up-right" size="16" class="link-arrow" aria-hidden="true"></i>
+                    </div>
+                </a>
+
+                <a href="https://www.youtube.com/@aekoray" class="link-card" target="_blank" rel="noopener noreferrer" id="link-youtube">
+                    <div class="link-left">
+                        <div class="social-icon icon-youtube" aria-hidden="true">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
+                            </svg>
+                        </div>
+                        <span class="link-label">YouTube</span>
+                    </div>
+                    <div class="link-right">
+                        <span class="link-tag">@aekoray</span>
+                        <i data-lucide="arrow-up-right" size="16" class="link-arrow" aria-hidden="true"></i>
+                    </div>
+                </a>
+
+                <a href="https://github.com/aekoray" class="link-card" target="_blank" rel="noopener noreferrer" id="link-github">
+                    <div class="link-left">
+                        <div class="social-icon icon-github" aria-hidden="true">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.53 1.032 1.53 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/>
+                            </svg>
+                        </div>
+                        <span class="link-label">GitHub</span>
+                    </div>
+                    <div class="link-right">
+                        <span class="link-tag">aekoray</span>
+                        <i data-lucide="arrow-up-right" size="16" class="link-arrow" aria-hidden="true"></i>
+                    </div>
+                </a>
+
+                <a href="mailto:korail.esen101@gmail.com" class="link-card" id="link-email">
+                    <div class="link-left">
+                        <div class="social-icon icon-email" aria-hidden="true">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <rect width="20" height="16" x="2" y="4" rx="2"></rect>
+                                <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path>
+                            </svg>
+                        </div>
+                        <span class="link-label">Email</span>
+                    </div>
+                    <div class="link-right">
+                        <i data-lucide="arrow-up-right" size="16" class="link-arrow" aria-hidden="true"></i>
+                    </div>
+                </a>
+            </nav>
+        </aside>
+
+        <!-- Colonne Droite -->
+        <div class="right-column">
+            <!-- Bento Card Principale : Créations & Parcours -->
+            <div class="bento-card full-content-card">
+                <!-- Section Créations & Modèles -->
+                <section class="portfolio-section" aria-labelledby="creations-heading">
+                    <div class="section-header">
+                        <div class="icon-badge icon-badge-purple"><i data-lucide="palette" size="16" aria-hidden="true"></i></div>
+                        <h2 id="creations-heading" class="section-title">Créations &amp; Modèles</h2>
+                    </div>
+
+                    <div class="gallery-grid" role="region" aria-label="Galerie de projets visuels">
+                        <figure class="gallery-item" tabindex="0" role="button" aria-label="Agrandir le modèle SolidWorks" data-src="karambit.png" data-caption="Modélisation 3D CAO — Couteau Karambit sur SolidWorks">
+                            <img src="karambit.png" alt="Modèle 3D SolidWorks Karambit" loading="lazy">
+                            <div class="gallery-overlay">
+                                <i data-lucide="maximize-2" size="20" aria-hidden="true"></i>
+                            </div>
+                            <figcaption class="item-label">
+                                <i data-lucide="box" size="11" aria-hidden="true"></i>
+                                <span>SolidWorks</span>
+                            </figcaption>
+                        </figure>
+
+                        <figure class="gallery-item" tabindex="0" role="button" aria-label="Agrandir la photographie" data-src="batiment.png" data-caption="Photographie Urbaine & Architecture">
+                            <img src="batiment.png" alt="Photographie d'architecture" loading="lazy">
+                            <div class="gallery-overlay">
+                                <i data-lucide="maximize-2" size="20" aria-hidden="true"></i>
+                            </div>
+                            <figcaption class="item-label">
+                                <i data-lucide="camera" size="11" aria-hidden="true"></i>
+                                <span>Photo</span>
+                            </figcaption>
+                        </figure>
+
+                        <figure class="gallery-item" tabindex="0" role="button" aria-label="Agrandir le dessin" data-src="dessin.png" data-caption="Illustration & Dessin graphique personnel">
+                            <img src="dessin.png" alt="Illustration graphique" loading="lazy">
+                            <div class="gallery-overlay">
+                                <i data-lucide="maximize-2" size="20" aria-hidden="true"></i>
+                            </div>
+                            <figcaption class="item-label">
+                                <i data-lucide="pen-tool" size="11" aria-hidden="true"></i>
+                                <span>Dessin</span>
+                            </figcaption>
+                        </figure>
+                    </div>
+                    <p class="gallery-footer">Aperçu de mes travaux en CAO 3D, compositions photographiques et illustrations.</p>
+                </section>
+
+                <hr class="bento-divider" aria-hidden="true">
+
+                <!-- Section CV / Parcours -->
+                <div class="resume-wrapper">
+                    <!-- Formation -->
+                    <section class="resume-block" aria-labelledby="formation-heading">
+                        <div class="section-header">
+                            <div class="icon-badge icon-badge-cyan"><i data-lucide="graduation-cap" size="16" aria-hidden="true"></i></div>
+                            <h2 id="formation-heading" class="section-title">Formation</h2>
+                        </div>
+
+                        <article class="timeline-item">
+                            <div class="timeline-header">
+                                <span class="date-badge">2024 — 2027</span>
+                                <h3 class="timeline-title">Formation Informatique, Systèmes &amp; Réseaux</h3>
+                            </div>
+                            <p class="timeline-subtitle">Cybersécurité, Systèmes &amp; Réseaux</p>
+                            <ul class="resume-list">
+                                <li><strong>Gestion du parc matériel :</strong> Audit, remplacement et upgrade des postes de travail (RAM, SSD NVMe, GPU, processeurs).</li>
+                                <li><strong>Support technique :</strong> Assistance utilisateurs, diagnostic matériel &amp; logiciel de niveau 1 &amp; 2.</li>
+                                <li><strong>Systèmes &amp; Réseaux :</strong> Configuration d'infrastructures réseaux locales et déploiement de vidéosurveillance IP.</li>
+                                <li><strong>Développement &amp; Scripting :</strong> Programmation et automatisation de tâches avec le langage Python.</li>
+                            </ul>
+                        </article>
+                    </section>
+
+                    <!-- Expériences & Projets -->
+                    <section class="resume-block" aria-labelledby="experience-heading">
+                        <div class="section-header">
+                            <div class="icon-badge icon-badge-emerald"><i data-lucide="briefcase" size="16" aria-hidden="true"></i></div>
+                            <h2 id="experience-heading" class="section-title">Expérience &amp; Projets</h2>
+                        </div>
+
+                        <article class="timeline-item">
+                            <div class="timeline-header">
+                                <span class="date-badge">Juin — Juillet 2025</span>
+                                <h3 class="timeline-title">Technicien de maintenance (Stage)</h3>
+                            </div>
+                            <p class="timeline-subtitle">Centre de formation technique</p>
+                            <ul class="resume-list">
+                                <li><strong>Électrotechnique &amp; Schématique :</strong> Réalisation de schémas électriques industriels, câblage d'armoires et maintenance des alimentations.</li>
+                                <li><strong>Maintien opérationnel :</strong> Maintenance préventive et curative des équipements et assistance aux postes de travail.</li>
+                            </ul>
+                        </article>
+
+                        <article class="timeline-item">
+                            <div class="timeline-header">
+                                <span class="date-badge">2022 — 2023</span>
+                                <h3 class="timeline-title">Service Civique</h3>
+                            </div>
+                            <p class="timeline-subtitle">Association à impact social</p>
+                            <ul class="resume-list">
+                                <li><strong>Inclusion Numérique :</strong> Lutte contre l'illectronisme via des ateliers d'accompagnement aux outils informatiques.</li>
+                                <li><strong>Engagement Social :</strong> Médiation, aide à la personne et sensibilisation citoyenne.</li>
+                            </ul>
+                        </article>
+
+                        <article class="timeline-item">
+                            <div class="timeline-header">
+                                <span class="date-badge date-badge-project">Projets Personnels</span>
+                                <h3 class="timeline-title">Hardware &amp; Développement Web</h3>
+                            </div>
+                            <ul class="resume-list">
+                                <li><strong>Expertise &amp; Assemblage Hardware :</strong> Analyse de marché, sélection sur mesure de composants et montage de setups haute performance avec optimisation thermique et rapport prix/puissance.</li>
+                                <li><strong>Plateforme Web &amp; Portfolio :</strong> Conception et mise en ligne d'une plateforme moderne responsive pour centraliser projets et réseaux.</li>
+                            </ul>
+                        </article>
+                    </section>
+
+                    <!-- Footer du CV : Langues & Atouts -->
+                    <footer class="resume-footer-grid">
+                        <section class="footer-card" aria-labelledby="languages-heading">
+                            <div class="section-header-compact">
+                                <i data-lucide="languages" size="15" class="icon-accent" aria-hidden="true"></i>
+                                <h4 id="languages-heading" class="sub-title">Langues</h4>
+                            </div>
+                            <ul class="skills-pill-list">
+                                <li><span class="skill-name">Français</span> <span class="skill-level">Langue maternelle</span></li>
+                                <li><span class="skill-name">Anglais</span> <span class="skill-level">Niveau B2 (Courant)</span></li>
+                            </ul>
+                        </section>
+
+                        <section class="footer-card" aria-labelledby="skills-heading">
+                            <div class="section-header-compact">
+                                <i data-lucide="sparkles" size="15" class="icon-accent" aria-hidden="true"></i>
+                                <h4 id="skills-heading" class="sub-title">Atouts clés</h4>
+                            </div>
+                            <ul class="skills-tag-list">
+                                <li class="soft-tag">Sens des responsabilités</li>
+                                <li class="soft-tag">Intelligence relationnelle</li>
+                                <li class="soft-tag">Esprit d'équipe &amp; Rigueur</li>
+                                <li class="soft-tag">Autonomie &amp; Curiosité</li>
+                            </ul>
+                        </section>
+                    </footer>
                 </div>
             </div>
         </div>
     </main>
 
-    <div id="lightbox" class="lightbox">
-        <span class="lightbox-close">&times;</span>
-        <img class="lightbox-content" id="lightbox-img" alt="Zoom">
+    <!-- Lightbox Modal -->
+    <div id="lightbox" class="lightbox" role="dialog" aria-modal="true" aria-label="Visualisation de média" aria-hidden="true">
+        <button class="lightbox-close" id="lightbox-close" aria-label="Fermer la vue agrandie">
+            <i data-lucide="x" size="24"></i>
+        </button>
+        <div class="lightbox-wrapper">
+            <img class="lightbox-content" id="lightbox-img" alt="">
+            <div class="lightbox-caption" id="lightbox-caption"></div>
+        </div>
     </div>
 
     <script src="scripts.js"></script>
