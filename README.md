@@ -52,4 +52,4 @@ Le site est hébergé et déployé automatiquement via **GitHub Pages** :
 
 ---
 
-© 2026 Koray (@aekoray) — Code sous licence MIT.
+© 2026 Koray (@aekoray) — Tous droits réservés.
